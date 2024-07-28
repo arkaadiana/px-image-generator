@@ -11,17 +11,17 @@ This project aims to create a website for PXImage, an AI image generator that al
 
 ## 🌟 Features
 
-- **🎨 AI Image Generation:**
+- **🎨 ```AI Image Generation```:**
     - Users can describe the image they want, and the AI will generate it in seconds.
-- **🌐 Public Gallery:**
+- **🌐 ```Public Gallery```:**
     - Explore trending AI-generated images and get inspiration from other users.
-- **💸 Free to Use:**
+- **💸 ```Free to Use```:**
     - PXImage is available for free with no cost for generating images.
-- **📸 High-Quality Images:**
+- **📸 ```High-Quality Images```:**
     - The AI ensures that all generated images are of high quality.
-- **💼 Commercial Use:**
+- **💼 ```Commercial Use```:**
     - Users can use generated images for commercial purposes.
-- **✅ Legal and Safe:**
+- **✅ ```Legal and Safe```:**
     - The platform ensures that all generated and used images comply with legal standards.
 
 ## 📂 Project Structure
@@ -29,15 +29,17 @@ This project aims to create a website for PXImage, an AI image generator that al
 The project is structured as follows:
 
 ```bash
-pximage/
-├── assets/ 
-│   ├── css/
-│   │   └── style.css
-│   ├── img/
-│   └── js/
-│       └── script.js
+px-image-generator/
+├── assets/
+├── css/
+│   ├── login-register.css
+│   └── style.css
+├── js/
+│   └── app.js
 ├── index.html
+├── login-register.html
 └── README.md
+
 ```
 
 ## 🚀 Getting Started
@@ -47,7 +49,7 @@ To get started with this project, follow these steps:
 1. **Clone the Repository**:
     - Clone the project repository to your local machine.
         ```bash
-        
+        https://github.com/arkaadiana/px-image-generator.git
         ```
 2. **Open the Project**:
     - Open the `index.html` file in your preferred web browser to view the website.
