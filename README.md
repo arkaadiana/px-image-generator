@@ -35,7 +35,8 @@ px-image-generator/
 │   ├── login-register.css
 │   └── style.css
 ├── js/
-│   └── app.js
+│   ├── app-login.css
+│   └── dropdown.js
 ├── index.html
 ├── login-register.html
 └── README.md

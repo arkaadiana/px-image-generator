@@ -57,7 +57,10 @@ h1.h1 {
 }
 
 .generate-btn {
-    background-image: linear-gradient(to right, #34075C 8%, #6E0FC2 100%);;
+    background-image: linear-gradient(to right, #34075C 8%, #6E0FC2 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    width: 25%;
+    height: 6vh;
 }
 
 textarea.form-control {
