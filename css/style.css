@@ -1,0 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/coolvetica-2');
+
+*{
+    font-family: 'Coolvetica', sans-serif;
+    color: white;
+}
+
+html, body {
+  font-family: 'Coolvetica', sans-serif;
+  background-image: url(../assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: auto;
+    width: 70%;
+}
+
+.generator {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 75vh;
+    width: 90vw;
+}
+
+/* .d-flex{
+    background-color: aqua;
+} */
+
+.main-text{
+    background-color: rgba(0, 0, 0, 0.151);
+    height: 75vh;
+    width: 90%;
+}
+
+.description-box{
+    background-color: red;
+    width: 75%;
+    height: 55vh;
+}
+
+h1.h1 {
+    font-size: 5rem;
+}
+
+.generate-btn {
+    background-image: linear-gradient(to right, #34075C 8%, #6E0FC2 100%);;
+}
+
+textarea.form-control {
+    resize: none;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+textarea.form-control:focus {
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
