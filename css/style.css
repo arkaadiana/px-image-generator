@@ -3,6 +3,7 @@
 *{
     font-family: 'Coolvetica', sans-serif;
     color: white;
+    letter-spacing: 2px;
 }
 
 html, body {
@@ -17,12 +18,20 @@ html, body {
 
 nav {
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.nav-link span{
+  letter-spacing: 0.5;
 }
 
 .logo {
     height: auto;
     width: 70%;
+}
+
+.highlight {
+  color: #FFA800;
 }
 
 .generator {
@@ -31,9 +40,6 @@ nav {
     width: 90vw;
 }
 
-/* .d-flex{
-    background-color: aqua;
-} */
 
 .main-text{
     background-color: rgba(0, 0, 0, 0.3);
@@ -42,7 +48,6 @@ nav {
 }
 
 .description-box{
-    background-color: ;
     width: 75%;
     height: 55vh;
 }
@@ -59,21 +64,21 @@ textarea.form-control {
     resize: none;
     background: rgba(0, 0, 0, 0.1);
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 textarea.form-control:focus {
     background: rgba(0, 0, 0, 0.2);
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 textarea.form-control::placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-weight: normal;
 }
 
-.explore, .explore .art, .free-online{
+.explore, .explore .art{
   width: 75vw;
 }
 
@@ -88,11 +93,96 @@ div.col-7{
   width: 33%;
 }
 
-
-@media (min-width:768px) {
-    .art img{
-      width: 75%;
-    }
+.free-online {
+  width: 60vw;
 }
 
 
+section.Faqs {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.faq{
+  max-width: 700px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  width: 200vw;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h4{
+  font-size: 1.8rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.answer p{
+  line-height: 1.6;
+
+}
+
+.faq.active .answer {
+  max-height: 80px;
+  animation: fade .5s ease-in-out;
+}
+
+.faq.active i{
+  transform: rotate(180deg);
+}
+
+i.arrow {
+  transition: transform .5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+/* hover navbar */
+.nav-link {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #510594 8%, #6E0FC2 100%);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
+  right: 0;
+}
