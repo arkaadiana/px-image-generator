@@ -9,7 +9,11 @@
 }
 
 body {
-    background-image: linear-gradient(145deg, rgb(49, 0, 67) 0%, rgba(83, 0, 0, 0.895) 100%);
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +39,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.2;
     animation: ease-out 15s;
 }
 
@@ -54,8 +58,8 @@ body {
 }
 
 .bubbles span:nth-child(even) {
-    background: rgb(255, 81, 0);
-    box-shadow: 0 0 0 10px #ff6f00,
+    background: rgb(230, 0, 255);
+    box-shadow: 0 0 0 10px #e374ff,
                 0 0 50px #eb1212,
                 0 0 100px #e31d1d;
 }
@@ -91,7 +95,7 @@ body {
 }
 
 .container button {
-    background-color: rgb(255, 129, 57);
+    background-color: rgb(255, 166, 0);
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -107,8 +111,8 @@ body {
 
 button:hover {
     background-color: transparent;
-    color: rgb(255, 129, 57);
-    border: 1px solid rgb(255, 129, 57);
+    color: rgb(255, 166, 0);
+    border: 1px solid rgb(255, 166, 0);
 }
 
 .container button.hidden {
@@ -222,7 +226,7 @@ button:hover {
 
 .toggle {
     height: 100%;
-    background-image: linear-gradient(145deg, rgb(187, 0, 255) 0%, rgb(255, 77, 0) 100%);
+    background-image: linear-gradient(145deg, rgb(72, 0, 99) 0%, rgb(144, 0, 255) 100%);
     color: #fff;
     position: relative;
     left: -100%;
